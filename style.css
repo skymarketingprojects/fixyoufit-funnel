@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.caveat-font {
+  font-family: "Caveat" !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.carousel {
+  display: flex;
+  justify-content: start;
+  justify-items: start;
+  overflow-x: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+
+.carousel-wrapper {
+  overflow-x: hidden;
+}
+.scroll-container {
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* For Firefox */
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+.card {
+  scroll-snap-align: center;
+}
