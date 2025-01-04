@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Best Physiotherapist in Bangalore | Bengaluru</title>
   </head>
   <body>
@@ -35,7 +41,6 @@
         </div>
       </div>
     </header>
-
     <main>
       <!-- heaidng sectin -->
       <h3
@@ -43,7 +48,7 @@
       >
         What's Stopping You From Living Freely? PAIN.
       </h3>
-      <div></div>
+
       <!-- Top Section -->
       <div
         class="mx-auto max-w-4xl p-5 grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2"
@@ -257,6 +262,131 @@
         </div>
       </div>
 
+      <!-- Carousel-->
+      <div class="container mx-auto py-10">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  src="https://via.placeholder.com/1920x1080"
+                  alt="Card Image 1"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-5">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                    Card 1
+                  </h3>
+                  <p class="text-gray-600">
+                    This is a brief description for Card 1. It has two lines of
+                    text to showcase the card content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  src="https://via.placeholder.com/1920x1080"
+                  alt="Card Image 2"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-5">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                    Card 2
+                  </h3>
+                  <p class="text-gray-600">
+                    This is a brief description for Card 2. It has two lines of
+                    text to showcase the card content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  src="https://via.placeholder.com/1920x1080"
+                  alt="Card Image 2"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-5">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                    Card 3
+                  </h3>
+                  <p class="text-gray-600">
+                    This is a brief description for Card 3. It has two lines of
+                    text to showcase the card content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  src="https://via.placeholder.com/1920x1080"
+                  alt="Card Image 2"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-5">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                    Card 3
+                  </h3>
+                  <p class="text-gray-600">
+                    This is a brief description for Card 3. It has two lines of
+                    text to showcase the card content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Swiper pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Laser 4 section -->
+
+      <div class="container mx-auto px-4 py-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 bg-white rounded-lg shadow-lg overflow-hidden"
+        >
+          <!-- Left Image Section -->
+          <div class="w-full">
+            <img
+              src="https://via.placeholder.com/600x600"
+              alt="Square Image"
+              class="w-full h-auto object-cover rounded-lg"
+            />
+          </div>
+          <!-- Right Content Section -->
+          <div class="p-6 lg:p-10">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">
+              Beautiful Responsive Design
+            </h2>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              This component is fully responsive and adjusts seamlessly across
+              all screen sizes. It features a square image on the left and
+              descriptive text with a heading on the right for larger screens.
+              On smaller screens, the image stacks above the text for an
+              optimized viewing experience.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed mt-4">
+              Tailwind's utility-first approach makes it simple to add styling,
+              like rounded corners, shadows, and responsive grid layouts.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Doctor Intro -->
       <div
         class="flex flex-col md:flex-row items-center md:items-start bg-gray-50 p-6 rounded-lg shadow-md"
       >
@@ -686,92 +816,6 @@
       </div>
 
       <!-- Image Section -->
-      <div class="bg-gray-50 p-6 rounded-lg shadow-md mt-6">
-        <div class="hidden md:grid grid-cols-3 gap-4">
-          <img
-            src="./images/gallery/img1.jpg"
-            alt="Image 1"
-            class="w-full h-auto rounded-lg shadow-lg"
-          />
-          <img
-            src="./images/gallery/img2.jpg"
-            alt="Image 2"
-            class="w-full h-auto rounded-lg shadow-lg"
-          />
-          <img
-            src="./images/gallery/img3.jpg"
-            alt="Image 3"
-            class="w-full h-auto rounded-lg shadow-lg"
-          />
-          <img
-            src="./images/gallery/img4.jpg"
-            alt="Image 4"
-            class="w-full h-auto rounded-lg shadow-lg"
-          />
-          <img
-            src="./images/gallery/img5.jpg"
-            alt="Image 5"
-            class="w-full h-auto rounded-lg shadow-lg"
-          />
-          <img
-            src="./images/gallery/img6.jpg"
-            alt="Image 6"
-            class="w-full h-auto rounded-lg shadow-lg"
-          />
-        </div>
-
-        <!-- Carousel View for Mobile -->
-        <div class="md:hidden">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="./images/gallery/img1.jpg"
-                  alt="Image 1"
-                  class="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./images/gallery/img2.jpg"
-                  alt="Image 2"
-                  class="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./images/gallery/img3.jpg"
-                  alt="Image 3"
-                  class="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./images/gallery/img4.jpg"
-                  alt="Image 4"
-                  class="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./images/gallery/img5.jpg"
-                  alt="Image 5"
-                  class="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./images/gallery/img6.jpg"
-                  alt="Image 6"
-                  class="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
 
       <!-- Book A Call -->
       <section class="bg-[#004aad] py-12 text-white">
@@ -876,50 +920,30 @@
         <p>&copy; 2025 Fix You Fit. All rights reserved.</p>
       </div>
     </footer>
-    <!-- Include Swiper.js -->
-    <!-- <link
-rel="stylesheet"
-href="https://unpkg.com/swiper/swiper-bundle.min.css"
-/>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script>
-// Initialize Swiper for the carousel
-const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-</script> -->
-    <!-- <script>
-      // Select all "Book a Call" buttons and modals
-      const bookCallBtns = document.querySelectorAll(".book-call-btn");
-      const modal = document.querySelector("#book-call-modal");
-      const closeModalBtn = document.querySelector("#close-modal-btn");
-      console.log(bookCallBtns);
-      console.log(modal);
-      console.log(closeModalBtn);
-      // Open Modal when any button is clicked
-      bookCallBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          modal.classList.remove("hidden");
-        });
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       });
-
-      // Close Modal when clicking the close button
-      closeModalBtn.addEventListener("click", () => {
-        modal.classList.add("hidden");
-      });
-
-      // Close Modal when clicking outside of the modal
-      window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-          modal.classList.add("hidden");
-        }
-      });
-    </script> -->
+    </script>
   </body>
 </html>

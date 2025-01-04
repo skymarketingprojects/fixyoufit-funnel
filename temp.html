@@ -3,380 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Beautiful Card Carousel</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="bg-blue-100 pt-12 px-8">
-      <div
-        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 relative px-4 py-8"
-      >
-        <!-- Left Section -->
-        <div class="min-h-24 pr-4">
-          <h1 class="text-blue-900 text-2xl font-bold">
-            Neck Pain Specialists in Delhi NCR
-          </h1>
-          <h2 class="hidden">Top Neck Pain Specialists in Delhi NCR</h2>
-          <p class="text-blue-900 mt-0"></p>
-          <p class="text-orange-600 mt-4 text-lg font-medium">
-            100% Insurance Coverage*
-          </p>
-          <ul class="list-disc mt-2 pl-8 text-gray-900 text-base">
-            <li>Non-Surgical Pain Treatment</li>
-            <li>30-60 Minute Procedures</li>
-            <li>Insurance Support</li>
-          </ul>
-        </div>
-
-        <!-- Image Section -->
-        <div class="hidden md:block top-5 right-5">
-          <img
-            src="./images/NeckPain.jpeg"
-            alt="Neck Pain Specialists"
-            class="max-w-xs object-contain"
-          />
-        </div>
-
-        <!-- Right Section -->
-        <div
-          class="col-span-2 lg:col-span-1 lg:col-start-3 flex justify-center flex-col items-center lg:items-end gap-2 md:gap-3 z-10 mt-16 lg:mt-4"
-          style="height: 80%"
-        >
-          <div
-            class="flex items-center bg-white px-1 md:px-3 py-0.5 md:py-1.5 rounded-lg border-[#DB5115] border-1 gap-3 lg:w-[440px] w-[312px] justify-center"
-          >
-            <img alt="logo" src="./images/FromTick.jpeg" />
-            <p class="text-[#2F438F] text-xs lg:text-base">
-              Fully Covered Under All Govt. &amp; Private Insurance<span
-                >*</span
-              >
-            </p>
+  <body class="bg-gray-100">
+    <div class="container mx-auto py-10">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://via.placeholder.com/1920x1080"
+                alt="Card Image 1"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Card 1</h3>
+                <p class="text-gray-600">
+                  This is a brief description for Card 1. It has two lines of
+                  text to showcase the card content.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <form
-            name="form"
-            id="form"
-            accept-charset="UTF-8"
-            class="bg-white w-full min-w-[305px] lg:w-[440px] p-4 rounded-xl relative md:pt-6 z-[99] shadow-lg border-[1px] border-[#F4F3ED] md:pb-6"
-            action="https://forms.zohopublic.in/nivaancare/form/NivaanNextjsLandingPageForm/formperma/Y2HL_Hh_THFjClPHcsQQZEjs07EIREE70jNJB07Srvk/htmlRecords/submit"
-            method="POST"
-          >
-            <input type="hidden" name="utm_source" value="google" />
-            <input type="hidden" name="utm_medium" value="paidsearch" />
-            <input
-              type="hidden"
-              name="utm_campaign"
-              value="BI_Search_NeckPain_Jan24"
-            />
-            <input type="hidden" name="utm_term" value="Neck_Generic" />
-            <input
-              type="hidden"
-              name="utm_content"
-              value="neck pain treatment"
-            />
-            <input type="hidden" name="utm_placement" value="" />
-            <input type="hidden" name="utm_ad_id" value="" />
-            <input type="hidden" name="utm_adset_id" value="" />
-            <input type="hidden" name="utm_ad_name" value="" />
-            <input type="hidden" name="utm_platform" value="" />
-            <input type="hidden" name="utm_campaign_id" value="" />
-            <input
-              type="hidden"
-              name="page_url"
-              value="https://www.nivaancare.com/next/neck-pain?utm_source=google&amp;utm_medium=paidsearch&amp;utm_source_platform=search&amp;utm_campaign=BI_Search_NeckPain_Jan24&amp;utm_term=Neck_Generic&amp;utm_content=neck%20pain%20treatment&amp;keyword=neck%20pain%20treatment&amp;matchtype=b&amp;network=g&amp;device=m&amp;campaign_id=20936133541&amp;adgroup_id=158150928912&amp;ad_id=687332348108&amp;gad_source=1&amp;gclid=EAIaIQobChMI-7K54ozSigMVzpVLBR1nURbxEAAYAiAAEgIG2fD_BwE"
-            />
-            <input
-              type="hidden"
-              name="form_location"
-              value="Hero-Section-Neck-Pain"
-            />
-            <input
-              type="hidden"
-              name="gclid"
-              value="EAIaIQobChMI-7K54ozSigMVzpVLBR1nURbxEAAYAiAAEgIG2fD_BwE"
-            />
-            <input type="hidden" name="fbclid" value="" />
-
-            <h2
-              class="text-center my-0 text-xl md:text-3xl md:mb-3 text-[#2F438F]"
-            >
-              Book Consultation
-            </h2>
-            <p class="text-center text-[16px] lg:text-left"></p>
-
-            <div class="flex flex-col gap-2 md:gap-4 mt-2 md:mt-4">
-              <div>
-                <div
-                  class="border border-solid border-[#EAF1FB] flex bg-[#EAF1FB] rounded-lg items-center text-xs p-1 px-2 lg:text-sm text-[#888888]"
-                >
-                  <label
-                    class="text-[#888888] text-xs md:text-sm py-1 md:py-2 px-1"
-                    >Name <em>*</em></label
-                  >
-                  <input
-                    type="text"
-                    maxlength="255"
-                    class="text-sm p-2 rounded-lg border-none outline-none flex-1 bg-[#EAF1FB] text-[#1E1E1E]"
-                    name="SingleLine"
-                    value=""
-                  />
-                </div>
-              </div>
-
-              <div
-                class="border border-solid border-[#EAF1FB] flex bg-[#EAF1FB] rounded-lg items-center text-xs p-1 pl-2 lg:text-sm text-[#888888]"
-              >
-                <label
-                  class="text-[#888888] text-xs md:text-sm py-1 md:py-2 px-0"
-                  >Mobile Number<em>*</em></label
-                >
-                <input
-                  type="text"
-                  maxlength="10"
-                  id="international_PhoneNumber_countrycode"
-                  class="text-[#1E1E1E] text-sm md:text-sm border-none outline-none p-2 flex-1 rounded-lg bg-[#EAF1FB] w-44"
-                  name="PhoneNumber_countrycode"
-                  value=""
-                />
-              </div>
-
-              <div
-                class="bg-[#EAF1FB] border border-solid border-[#EAF1FB] flex items-center text-xs p-1 px-2 lg:text-sm text-[#888888] rounded-lg"
-              >
-                <label
-                  class="text-[#888888] text-xs md:text-sm py-1 md:py-2 px-1"
-                  >Select City*</label
-                >
-                <select
-                  name="Dropdown1"
-                  class="text-[#1E1E1E] text-sm md:text-sm border-none outline-none p-2 flex-1 rounded-lg bg-[#EAF1FB]"
-                >
-                  <option value="" disabled selected></option>
-                  <option value="New Delhi">New Delhi</option>
-                  <option value="Gurugram">Gurugram</option>
-                  <option value="Noida">Noida</option>
-                  <option value="Ghaziabad">Ghaziabad</option>
-                  <option value="Faridabad">Faridabad</option>
-                </select>
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://via.placeholder.com/1920x1080"
+                alt="Card Image 2"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Card 2</h3>
+                <p class="text-gray-600">
+                  This is a brief description for Card 2. It has two lines of
+                  text to showcase the card content.
+                </p>
               </div>
             </div>
-
-            <div class="flex justify-center mt-2 md:mt-4">
-              <button
-                type="button"
-                class="bg-[#2F438F] rounded-lg flex gap-2 shadow-sm mt-2 lg:mt-0 px-8 text-white font-semibold p-2"
-              >
-                Consult Now
-              </button>
+          </div>
+          <!-- card 3 -->
+          <div class="swiper-slide">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://via.placeholder.com/1920x1080"
+                alt="Card Image 2"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Card 3</h3>
+                <p class="text-gray-600">
+                  This is a brief description for Card 3. It has two lines of
+                  text to showcase the card content.
+                </p>
+              </div>
             </div>
-          </form>
+          </div>
+          <!-- card 3 -->
+          <div class="swiper-slide">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://via.placeholder.com/1920x1080"
+                alt="Card Image 2"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Card 3</h3>
+                <p class="text-gray-600">
+                  This is a brief description for Card 3. It has two lines of
+                  text to showcase the card content.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Swiper navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Swiper pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-    <footer>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div>
-          <h3 class="text-xl font-bold mb-4">NeckCare</h3>
-          <p class="text-gray-400">
-            Leading provider of advanced neck pain treatment solutions.
-          </p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-4">Contact Info</h3>
-          <div class="space-y-2">
-            <div class="flex items-center">
-              <!-- <Phone class="w-5 h-5 mr-2" /> -->
-              <span>1-800-NECK-CARE</span>
-            </div>
-            <div class="flex items-center">
-              <!-- <Clock class="w-5 h-5 mr-2" /> -->
-              <span>Mon-Fri: 9AM-6PM</span>
-            </div>
-            <div class="flex items-center">
-              <!-- <MapPin class="w-5 h-5 mr-2" /> -->
-              <span>123 Health Street, Medical District</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-          <ul class="space-y-2">
-            <li>
-              <a href="#about" class="hover:text-blue-400">About Us</a>
-            </li>
-            <li>
-              <a href="#services" class="hover:text-blue-400">Services</a>
-            </li>
-            <li>
-              <a href="#contact" class="hover:text-blue-400">Contact</a>
-            </li>
-            <li>
-              <a href="#privacy" class="hover:text-blue-400">Privacy Policy</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <!-- problems grid -->
-    <section class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3">
-      <div
-        role="group"
-        aria-roledescription="slide"
-        class="min-w-0 shrink-0 grow-0 basis-full pl-4 md:basis-1/2 lg:basis-1/3"
-      >
-        <div
-          class="p-6 bg-white rounded-lg w-full md:w-[21.625rem] md:h-[24rem] h-[21rem]"
-        >
-          <div class="flex justify-between">
-            <h3
-              class="text-[16px] leading-[18px] md:text-[22px] md:leading-[26px] text-[#2F438F] w-[65%] mt-4"
-            >
-              Caudal Epidural Injection
-            </h3>
-            <div>
-              <img
-                alt="treatment image"
-                loading="lazy"
-                width="94"
-                height="91.4"
-                decoding="async"
-                class="hidden md:block"
-                src="/images/CaudalNeckPain.jpeg"
-              />
-              <img
-                alt="treatment image"
-                loading="lazy"
-                width="94"
-                height="91.4"
-                decoding="async"
-                class="block md:hidden"
-                src="/images/CaudalNeckPain.jpeg"
-              />
-            </div>
-          </div>
 
-          <div
-            class="mt-4 text-[10px] leading-[15.63px] md:text-[14px] md:leading-[22px]"
-          >
-            <h4 class="text-[#2F438F]">Process:</h4>
-            <p class="text-gray-800">
-              Doctor injects a specific steroid/numbing medicine in the epidural
-              space to reduce pain and inflammation.
-            </p>
-          </div>
-
-          <div
-            class="mt-4 text-[10px] leading-[15.63px] md:text-[14px] md:leading-[22px]"
-          >
-            <h4 class="text-[#2F438F]">Benefits:</h4>
-            <ul class="capitalize text-gray-800">
-              <li>• Daycare procedure</li>
-              <li>• Provides instant pain relief</li>
-              <li>• Increases mobility</li>
-              <li>• Reduces reliance on painkillers</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div
-        role="group"
-        aria-roledescription="slide"
-        class="min-w-0 shrink-0 grow-0 basis-full pl-4 md:basis-1/2 lg:basis-1/3"
-      >
-        <div
-          class="p-6 bg-white rounded-lg w-full md:w-[21.625rem] md:h-[24rem] h-[21rem]"
-        >
-          <div class="flex justify-between">
-            <h3
-              class="text-[16px] leading-[18px] md:text-[22px] md:leading-[26px] text-[#2F438F] w-[65%] mt-4"
-            >
-              Caudal Epidural Injection
-            </h3>
-            <div>
-              <img
-                alt="treatment image"
-                loading="lazy"
-                width="94"
-                height="91.4"
-                decoding="async"
-                class="hidden md:block"
-                src="/images/CaudalNeckPain.jpeg"
-              />
-            </div>
-          </div>
-
-          <div
-            class="mt-4 text-[10px] leading-[15.63px] md:text-[14px] md:leading-[22px]"
-          >
-            <h4 class="text-[#2F438F]">Process:</h4>
-            <p class="text-gray-800">
-              Doctor injects a specific steroid/numbing medicine in the epidural
-              space to reduce pain and inflammation.
-            </p>
-          </div>
-
-          <div
-            class="mt-4 text-[10px] leading-[15.63px] md:text-[14px] md:leading-[22px]"
-          >
-            <h4 class="text-[#2F438F]">Benefits:</h4>
-            <ul class="capitalize text-gray-800">
-              <li>• Daycare procedure</li>
-              <li>• Provides instant pain relief</li>
-              <li>• Increases mobility</li>
-              <li>• Reduces reliance on painkillers</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div
-        role="group"
-        aria-roledescription="slide"
-        class="min-w-0 shrink-0 grow-0 basis-full pl-4 md:basis-1/2 lg:basis-1/3"
-      >
-        <div
-          class="p-6 bg-white rounded-lg w-full md:w-[21.625rem] md:h-[24rem] h-[21rem]"
-        >
-          <div class="flex justify-between">
-            <h3
-              class="text-[16px] leading-[18px] md:text-[22px] md:leading-[26px] text-[#2F438F] w-[65%] mt-4"
-            >
-              Caudal Epidural Injection
-            </h3>
-            <div>
-              <img
-                alt="treatment image"
-                loading="lazy"
-                width="94"
-                height="91.4"
-                decoding="async"
-                class="hidden md:block"
-                src="/images/CaudalNeckPain.jpeg"
-              />
-            </div>
-          </div>
-
-          <div
-            class="mt-4 text-[10px] leading-[15.63px] md:text-[14px] md:leading-[22px]"
-          >
-            <h4 class="text-[#2F438F]">Process:</h4>
-            <p class="text-gray-800">
-              Doctor injects a specific steroid/numbing medicine in the epidural
-              space to reduce pain and inflammation.
-            </p>
-          </div>
-
-          <div
-            class="mt-4 text-[10px] leading-[15.63px] md:text-[14px] md:leading-[22px]"
-          >
-            <h4 class="text-[#2F438F]">Benefits:</h4>
-            <ul class="capitalize text-gray-800">
-              <li>• Daycare procedure</li>
-              <li>• Provides instant pain relief</li>
-              <li>• Increases mobility</li>
-              <li>• Reduces reliance on painkillers</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

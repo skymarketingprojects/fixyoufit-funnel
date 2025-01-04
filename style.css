@@ -6,27 +6,3 @@
   font-weight: 400;
   font-style: normal;
 }
-
-.carousel {
-  display: flex;
-  justify-content: start;
-  justify-items: start;
-  overflow-x: hidden;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  gap: 1rem;
-}
-
-.carousel-wrapper {
-  overflow-x: hidden;
-}
-.scroll-container {
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none; /* For Firefox */
-}
-.scroll-container::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Edge */
-}
-.card {
-  scroll-snap-align: center;
-}
