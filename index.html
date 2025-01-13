@@ -92,7 +92,7 @@ Take Control of Your Orthopedic Health
             class="w-full text-sm flex items-center justify-center font-bold text-blue-600 text-center"
             >+91 79759 10436</a
           >
-          <form action="https://formspree.io/f/xeoopaao" method="POST" >
+          <form id="my-form" action="https://formspree.io/f/xeoopaao" method="POST">
             <div class="flex flex-col">
               <label class="p-2 py-2 pl-0" for="name">Name *</label>
               <input
@@ -100,6 +100,7 @@ Take Control of Your Orthopedic Health
                 id="name"
                 name="name"
                 type="text"
+                required
               />
             </div>
             <div class="flex flex-col">
@@ -108,7 +109,8 @@ Take Control of Your Orthopedic Health
                 class="border border-[#ccc] w-full rounded-[6px] p-[6px_12px] shadow-inner shadow-[#dddd]"
                 id="email"
                 name="email"
-                type="text"
+                type="email"
+                required
               />
             </div>
             <div class="flex flex-col">
@@ -117,19 +119,21 @@ Take Control of Your Orthopedic Health
                 class="border border-[#ccc] w-full rounded-[6px] p-[6px_12px] shadow-inner shadow-[#dddd]"
                 id="phone"
                 name="phone"
-                type="text"
+                type="tel"
+                required
               />
             </div>
             <div>
-              <!-- Hidden redirect field -->
-    <input type="hidden" name="_redirect" value="https://dr-vaishnavi-kishan.netlify.app/thankyou.html">
+              <div id="my-form-status"></div>
               <button
                 class="bg-[#f88222] rounded-lg text-white font-bold border-0 outline-none py-[13px] px-[46px] w-full mt-[20px]"
+                type="submit"
               >
                 Submit
               </button>
             </div>
           </form>
+          
         </div>
       </div>
 
@@ -1247,5 +1251,41 @@ Take Control of Your Orthopedic Health
         },
       });
     </script>
+    <script>
+      var form = document.getElementById("my-form");
+    
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        try {
+          const response = await fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+    
+          if (response.ok) {
+            form.reset();
+            // Redirect to the Thank You page
+            window.location.href = "https://dr-vaishnavi-kishan.netlify.app/thankyou.html";
+          } else {
+            const result = await response.json();
+            if (result.errors) {
+              status.innerHTML = result.errors.map((error) => error.message).join(", ");
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form.";
+            }
+          }
+        } catch (error) {
+          status.innerHTML = "Oops! There was a problem submitting your form.";
+        }
+      }
+    
+      form.addEventListener("submit", handleSubmit);
+    </script>
+    
   </body>
 </html>
